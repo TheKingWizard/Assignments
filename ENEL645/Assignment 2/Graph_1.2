@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="ca <= 0.5\ngini = 0.493\nsamples = 236\nvalue = [104, 132]\nclass = heart_disease"] ;
+1 [label="thal <= 2.5\ngini = 0.352\nsamples = 136\nvalue = [31, 105]\nclass = heart_disease"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="oldpeak <= 3.55\ngini = 0.182\nsamples = 99\nvalue = [10, 89]\nclass = heart_disease"] ;
+1 -> 2 ;
+3 [label="gini = 0.167\nsamples = 98\nvalue = [9, 89]\nclass = heart_disease"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = healthy"] ;
+2 -> 4 ;
+5 [label="cp <= 0.5\ngini = 0.491\nsamples = 37\nvalue = [21, 16]\nclass = healthy"] ;
+1 -> 5 ;
+6 [label="gini = 0.278\nsamples = 18\nvalue = [15, 3]\nclass = healthy"] ;
+5 -> 6 ;
+7 [label="gini = 0.432\nsamples = 19\nvalue = [6, 13]\nclass = heart_disease"] ;
+5 -> 7 ;
+8 [label="cp <= 0.5\ngini = 0.394\nsamples = 100\nvalue = [73, 27]\nclass = healthy"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="oldpeak <= 0.45\ngini = 0.124\nsamples = 60\nvalue = [56, 4]\nclass = healthy"] ;
+8 -> 9 ;
+10 [label="gini = 0.375\nsamples = 16\nvalue = [12, 4]\nclass = healthy"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 44\nvalue = [44, 0]\nclass = healthy"] ;
+9 -> 11 ;
+12 [label="oldpeak <= 1.95\ngini = 0.489\nsamples = 40\nvalue = [17, 23]\nclass = heart_disease"] ;
+8 -> 12 ;
+13 [label="gini = 0.438\nsamples = 34\nvalue = [11, 23]\nclass = heart_disease"] ;
+12 -> 13 ;
+14 [label="gini = 0.0\nsamples = 6\nvalue = [6, 0]\nclass = healthy"] ;
+12 -> 14 ;
+}
